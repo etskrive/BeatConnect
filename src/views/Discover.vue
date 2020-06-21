@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import FeedElement from './FeedElement.vue'
+import FeedElement from '../components/FeedElement.vue';
 
 export default {
   data(){

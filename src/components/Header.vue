@@ -7,10 +7,14 @@
         <div class="logoContainer__text">Beat Connect</div>
       </div>
       <div class="navElements">
-        <div class="navElement__choice">Discover</div>
+        <router-link to="/">
+          <div class="navElement__choice">Discover</div>
+        </router-link>
       </div>
       <div class="navElements">
-        <div class="navElement__choice">Profile</div>
+        <router-link to="/profile">
+          <div class="navElement__choice">Profile</div>
+        </router-link>
       </div>
       <div class="profileContainer">
         <div class="profileContainer__text" v-on:click="showOverlay">{{ profilePrompt }}</div>
@@ -70,9 +74,6 @@ export default {
   .logoContainer .logoContainer__text {
     font: italic small-caps bold 44px Jazz LET, fantasy;
     font-size: 2rem;
-  }
-  .navElement {
-
   }
   .navElement__choice {
     font-size: var(--text-header);
